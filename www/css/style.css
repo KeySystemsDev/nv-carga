@@ -1,1 +1,17 @@
 /* Empty. Add your own CSS if you like */
+
+.slider-pager .slider-pager-page {
+  /*color: #fff;*/
+  width: 7px;
+}
+.slider-pager-page i{
+    font-size: 8px;
+    /*color: #fff;*/
+}
+.profile-picture img{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+    vertical-align: middle;
+}
