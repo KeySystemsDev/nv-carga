@@ -33,13 +33,10 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
+.controller('PlaylistsCtrl', function($scope, Lista) {
+  $scope.lista = Lista.all();
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
+.controller('PlaylistCtrl', function($scope, $stateParams, Lista) {
+  $scope.articulo = Lista.get($stateParams.id_lista);
 });
