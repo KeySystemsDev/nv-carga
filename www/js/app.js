@@ -30,25 +30,77 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'AppCtrl'
   })
   
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.lista', {
+      url: "/lista",
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/lista.html"
         }
       }
     })
 
-  .state('app.single', {
-    url: "/playlists/:id_lista",
+  .state('app.servicio', {
+    url: "/servicio",
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
+        templateUrl: "templates/servicio.html",
+      }
+    }
+  })
+
+  .state('app.quienessomos', {
+    url: "/quienes-somos",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/quienes-somos.html",
+      }
+    }
+  })
+
+  .state('app.envios', {
+    url: "/envios",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/envios.html",
+      }
+    }
+  })
+
+  .state('app.vehiculos', {
+    url: "/vehiculos",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/vehiculos.html",
+      }
+    }
+  })
+
+  .state('app.pagos', {
+    url: "/pagos",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/pagos.html",
+      }
+    }
+  })
+
+  .state('app.comprar', {
+    url: "/comprar",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/comprar.html",
+      }
+    }
+  })
+
+  .state('app.contacto', {
+    url: "/contacto",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/contacto.html",
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/lista');
 });
