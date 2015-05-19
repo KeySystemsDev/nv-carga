@@ -1,8 +1,37 @@
 <ion-view view-title="{{articulo.name}}">
   <ion-content class="padding">
-    <img ng-src="{{articulo.image}}" style="width: 64px; height: 64px">
-    <p>
-      {{articulo.lastText}}
-    </p>
+
+    <div class="list card">
+
+		<div class="item item-avatar">
+			<img ng-src="{{articulo.image}}">
+			<h2>{{articulo.name}}</h2>
+			<p>{{articulo.lastText}}</p>
+		</div>
+
+		<div class="item item-body">
+			<img class="full-image" src="http://placehold.it/350x350">
+			<p>
+			  {{articulo.descripcion}}
+			</p>
+		</div>
+
+		<div class="item tabs tabs-secondary tabs-icon-left">
+			<a class="tab-item" href="#">
+			  	<i class="icon ion-social-facebook"></i>
+			</a>
+			<a class="tab-item" href="#">
+			  	<i class="icon ion-social-twitter"></i>
+			</a>
+			<a class="tab-item" href="#">
+			  	<i class="icon ion-social-youtube"></i>
+			</a>
+			<a class="tab-item" href="#">
+			  	<i class="icon ion-social-instagram"></i>
+			</a>
+		</div>
+
+	</div>
+
   </ion-content>
 </ion-view>
