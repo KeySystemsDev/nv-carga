@@ -6,27 +6,37 @@ angular.module('starter.services', [])
   // Some fake testing data
   var lista = [{
     id: 0,
-    name: 'Ben Sparrow',
+    name: 'Servicios',
     lastText: 'You on your way?',
     image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
+    name: 'Quiénes Somos',
     lastText: 'Hey, it\'s me',
     image: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
   },{
     id: 2,
-    name: 'Adam Bradleyson',
+    name: 'Envios',
     lastText: 'I should buy a boat',
     image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
   }, {
     id: 3,
-    name: 'Perry Governor',
+    name: 'Importación de Vehículos',
     lastText: 'Look at my mukluks!',
-    image: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
+    image: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
   }, {
     id: 4,
-    name: 'Mike Harrington',
+    name: 'Pagos',
+    lastText: 'Look at my mukluks!',
+    image: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+  }, {
+    id: 5,
+    name: 'Como Comprar',
+    lastText: 'Look at my mukluks!',
+    image: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+  }, {
+    id: 6,
+    name: 'Contacto',
     lastText: 'This is wicked good ice cream.',
     image: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
   }];
