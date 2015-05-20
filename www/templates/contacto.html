@@ -15,24 +15,25 @@
 	        	<div class="list">
 				  	<label class="item item-input item-stacked-label">
 				    	<span class="input-label">Nombre</span>
-				    	<input type="text" placeholder="Nombre y Apellido">
+				    	<input type="text" placeholder="Nombre y Apellido" id="i_nombre" name="nombre" ng-model="formData.i_nombre" required>
 				 	</label>
 				  	<label class="item item-input item-stacked-label">
 				    	<span class="input-label">Telefono</span>
-				    	<input type="text" placeholder="Telefono">
+				    	<input type="text" placeholder="Telefono" id="i_telefono" name="telefono" ng-model="formData.i_telefono" required>
 				  	</label>				  	
 				  	<label class="item item-input item-stacked-label">
 				    	<span class="input-label">Email</span>
-				    	<input type="text" placeholder="nombre@dominio.com">
+				    	<input type="text" placeholder="nombre@dominio.com" id="i_correo" name="correo" ng-model="formData.i_correo" required>
 				  	</label>
 				  	<label class="item item-input">
-					    <textarea placeholder="Escriba aqui su solicitud" rows="3"></textarea>
+					    <textarea placeholder="Escriba aqui su solicitud" rows="3" id="i_mensaje" name="mensaje" ng-model="formData.i_mensaje" required></textarea>
 					</label>
-				  	<label class="item item-input item-stacked-label"></label> 
+				  	<label class="item item-input item-stacked-label"></label>
+
 				</div>
 				
 				<div class="button-enviar">
-					<button class="button button-positive">
+					<button class="button button-positive"type="submit" value="enviar" ng-disabled="formulario.$invalid" ng-click="enviar(formData)">
 	  					Enviar
 					</button>
 				</div>
