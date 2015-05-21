@@ -5,7 +5,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ContactoCtrl', function($scope , $ionicPopup,  Mensaje) {
-  	$scope.formData = {i_correo_fijo : 'diego.carciente@gmail.com'};
+  	$scope.formData = {i_correo_fijo : 'nvcarga@gmail.com'};
 
   	$scope.enviar = function(formData){
   		console.log(formData);

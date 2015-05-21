@@ -20,11 +20,20 @@
 	padding-bottom: 20px;
 }
 .padding{
-  padding: 0px;
+    padding: 0px;
 }
 .card, .list-inset {
-  overflow: hidden;
-  margin: 0px 0px;
-  border-radius: 2px;
-  background-color: #fff;
+    overflow: hidden;
+    margin: 0px 0px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.img-icon-app{
+    width: 35px;
+    height:35px;
+    padding-bottom: 2px;
+    margin-left:10px;
+}
+.bar.bar-calm {
+    border-bottom: solid #a9cf38;
 }
