@@ -1,4 +1,9 @@
 <ion-view view-title="Contacto">
+  	<ion-nav-buttons side="right">
+        <div class="row button-llamar">
+            <a href="tel:04247262365" class="button button-icon button-clear ion-ios-telephone placeholder-icon"></a>
+        </div>
+    </ion-nav-buttons>
   <ion-content class="padding">
 
     <div class="list card">
@@ -8,6 +13,36 @@
 			<h2>Contacto</h2>
             <p>Conócenos más de cerca.</p>
 		</div>
+
+		<div class="item tabs tabs-secondary tabs-icon-left">
+			<a class="tab-item" href="#" browse-to="https://www.facebook.com/nvcarga">
+			  	<i class="icon ion-social-facebook"></i>
+			</a>
+			<a class="tab-item" href="#" browse-to="https://twitter.com/nvcarga">
+			  	<i class="icon ion-social-twitter"></i>
+			</a>
+			<a class="tab-item" href="#" browse-to="https://www.youtube.com/channel/UC_d2f3nIMTn8o9xqY6ttFsQ/">
+			  	<i class="icon ion-social-youtube"></i>
+			</a>
+			<a class="tab-item" href="#" browse-to="https://instagram.com/nvcarga">
+			  	<i class="icon ion-social-instagram"></i>
+			</a>
+		</div>
+
+		<div id="map_canvas">
+			    <ui-gmap-google-map 
+			    	center="map.center" 
+			    	zoom="map.zoom"
+			    	draggable="false"
+			    	options="map.options">
+				        <ui-gmap-marker 
+				        		coords="map.marker"
+				        		idkey="map.id"
+				        		options="map.options"
+				        		draggable="true">
+				        </ui-gmap-marker>
+			    </ui-gmap-google-map>
+			</div>
 
 		<div class="form">
 			<form name="formulario" id="formulario">
@@ -41,20 +76,7 @@
         	</form>
 		</div>
 
-		<div class="item tabs tabs-secondary tabs-icon-left">
-			<a class="tab-item" href="#">
-			  	<i class="icon ion-social-facebook"></i>
-			</a>
-			<a class="tab-item" href="#">
-			  	<i class="icon ion-social-twitter"></i>
-			</a>
-			<a class="tab-item" href="#">
-			  	<i class="icon ion-social-youtube"></i>
-			</a>
-			<a class="tab-item" href="#">
-			  	<i class="icon ion-social-instagram"></i>
-			</a>
-		</div>
+		
 
 	</div>
 

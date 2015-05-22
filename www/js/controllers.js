@@ -7,6 +7,19 @@ angular.module('starter.controllers', [])
 .controller('ContactoCtrl', function($scope , $ionicPopup,  Mensaje) {
   	$scope.formData = {i_correo_fijo : 'nvcarga@gmail.com'};
 
+    $scope.map = {  center: 
+                            {   latitude: 28.469389, 
+                                longitude:  -81.277089
+                            },
+                        marker: 
+                            {   latitude: 28.469389, 
+                                longitude:  -81.277089
+                            }, 
+                        zoom: 15, 
+                        id: 0,
+                        options: {scrollwheel: false}
+                    };
+
   	$scope.enviar = function(formData){
   		console.log(formData);
 

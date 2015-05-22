@@ -37,3 +37,24 @@
 .bar.bar-calm {
     border-bottom: solid #a9cf38;
 }
+.button-llamar{
+    padding: 0px;
+    bottom: 0px;
+    position: relative;
+    top: -1.99px;
+}
+#map_canvas {
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+}
+#map_canvas {
+    position: relative;
+}    
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
