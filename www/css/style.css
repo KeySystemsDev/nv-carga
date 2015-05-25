@@ -43,6 +43,11 @@
     position: relative;
     top: -1.99px;
 }
+/*
+.button-llamar a{
+    margin-left: 20px;
+}
+*/
 #map_canvas {
     height: 200px;
     width: 100%;

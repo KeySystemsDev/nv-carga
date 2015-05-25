@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ContactoCtrl', function($scope , $ionicPopup,  Mensaje) {
+.controller('ContactoCtrl', function($scope , $ionicPopup, $cordovaSocialSharing,  Mensaje) {
   	$scope.formData = {i_correo_fijo : 'nvcarga@gmail.com'};
 
     $scope.map = {  center: 
@@ -37,4 +37,16 @@ angular.module('starter.controllers', [])
                                         template: 'No se pudo enviar el mensaje.'});
                 });
   	}
+
+    $scope.shareAnywhere = function() {
+        $cordovaSocialSharing.share("NV Carga Descarga nuestra APP completamente gratis.", "NV carga", "www/img/nv-carga.png", "https://play.google.com/store/apps/details?id=com.ionicframework.nvcarga640699&hl=es");
+    }
+ 
+    $scope.shareViaTwitter = function(message, image, link) {
+        $cordovaSocialSharing.canShareVia("twitter", message, image, link).then(function(result) {
+            $cordovaSocialSharing.shareViaTwitter(message, image, link);
+        }, function(error) {
+            alert("Cannot share on Twitter");
+        });
+    }
 });
